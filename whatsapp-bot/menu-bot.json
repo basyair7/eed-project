@@ -1,0 +1,95 @@
+{
+  "message-database": {
+    "1-help": {
+      "q": "help"
+    },
+    "1-menu": {
+      "description": "menampilkan list perintah bot",
+      "menu": "menu",
+      "q": "menu"
+    },
+    "2-botstatus": {
+      "description": "tampilkan informasi sistem server",
+      "menu": "bot status",
+      "q": "bot status"
+    },
+    "2-info": {
+      "q": "info"
+    },
+    "2-status": {
+      "description": "menampilkan informasi keadaan sensor & pompa",
+      "menu": "status",
+      "q": "status"
+    },
+    "3-kelembapan-1": {
+      "a": "30",
+      "description": "check data sensor 1",
+      "menu": "check 1",
+      "q": "check 1"
+    },
+    "4-kelembapan-2": {
+      "a": "90",
+      "description": "check data sensor 2",
+      "menu": "check 2",
+      "q": "check 2"
+    },
+    "5-pump-1-on": {
+      "a": "pump 1 on : OK",
+      "description": "hidupkan pompa air 1",
+      "menu": "pump 1 on",
+      "q": "pump 1 on"
+    },
+    "6-pump-2-on": {
+      "a": "pump 2 on : OK",
+      "description": "hidupkan pompa air 2",
+      "menu": "pump 2 on",
+      "q": "pump 2 on"
+    },
+    "7-pump-1-off": {
+      "a": "pump 1 off : OK",
+      "description": "matikan pompa air 1",
+      "menu": "pump 1 off",
+      "q": "pump 1 off"
+    },
+    "8-pump-2-off": {
+      "a": "pump 2 off : OK",
+      "description": "matikan pompa air 2",
+      "menu": "pump 2 off",
+      "q": "pump 2 off"
+    },
+    "90-auto-switch-on": {
+      "a": "auto pump on : OK",
+      "description": "hidupkan otomatis penyiraman",
+      "menu": "auto pump on",
+      "q": "auto pump on"
+    },
+    "91-auto-switch-off": {
+      "a": "auto pump off : OK",
+      "description": "matikan otomatis penyiraman",
+      "menu": "auto pump off",
+      "q": "auto pump off"
+    },
+    "92-all-pump-on": {
+      "a": "semua poma air hidup : OK",
+      "description": "hidupkan semua pompa air",
+      "menu": "all pump on",
+      "q": "all pump on"
+    },
+    "93-all-pimp-off": {
+      "a": "semua poma air mati : OK",
+      "description": "matikan semua pompa air",
+      "menu": "all pump off",
+      "q": "all pump off"
+    }
+  },
+  "switcher": {
+    "auto": false,
+    "switch-1": false,
+    "switch-2": false
+  },
+  "whatsapp-contact": {
+    "basyair": {
+      "number": "628xxxxxxxxxx@c.us"
+    }
+  }
+}

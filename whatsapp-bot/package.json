@@ -1,0 +1,31 @@
+{
+    "name": "wa_bot",
+    "version": "1.5.0",
+    "description": "WhatsApp Bot",
+    "main": "src/server.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/server.js",
+        "node .": "nodemon run src/server.js",
+        "dev": "nodemon src/server.js"
+    },
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "esm": "^3.2.25",
+        "express": "^4.18.1",
+        "firebase": "^9.8.1",
+        "firebase-admin": "^10.2.0",
+        "fs": "^0.0.1-security",
+        "http": "^0.0.1-security",
+        "luxon": "^3.1.0",
+        "nodemon": "^2.0.20",
+        "os": "^0.1.2",
+        "qrcode": "^1.5.0",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.16.6"
+    },
+    "author": "basyair7"
+}

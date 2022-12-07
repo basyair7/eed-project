@@ -1,0 +1,3 @@
+https://how2electronics.com/interfacing-sx1278-lora-module-with-arduino/
+
+https://www.researchgate.net/figure/Atmel-MCU-ATmega328-and-the-Arduino-pin-out_fig10_312372376
