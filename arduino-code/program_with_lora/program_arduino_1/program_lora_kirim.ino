@@ -24,6 +24,7 @@ void main_transmisi() {
   unsigned long waktuSekarang_3 = millis();
 
   if ((unsigned long)(waktuSekarang_3 - waktuSebelum_3) >= jedaWaktu_3) {
+    waktuSebelum_3 = waktuSekarang_3;
     // kirim data sensor ke LoRa receiver
     LoRa.beginPacket();
     // LoRa.print(String(sensorUltrasonic()));

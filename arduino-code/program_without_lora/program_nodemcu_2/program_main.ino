@@ -25,7 +25,7 @@ void program_relay() {
 
   if ((unsigned long)(waktuSekarang_2 - waktuSebelum_2) >= jedaWaktu_2)
   {
-    waktuSekarang_2 = waktuSebelum_2;
+    waktuSebelum_2 = waktuSekarang_2;
     // buat object jsonBuffer_relay;
     DynamicJsonBuffer jsonBuffer_relay;
     JsonObject& data_sensor = jsonBuffer_relay.createObject();

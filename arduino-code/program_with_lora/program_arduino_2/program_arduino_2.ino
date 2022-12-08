@@ -1,12 +1,9 @@
 #include <SPI.h>
 #include <LoRa.h>
-#include <SoftwareSerial.h>
 
-// Konfigurasi pin serial komunikasi arduino
-SoftwareSerial arduino2(4, 5); // RX = 4, TX = 5;
-
-// buat variabel pin sensor
+// buat variabel pin sensor & relay
 #define pinSensorAir A0
+#define pinRelay 4
 
 // buat variabel untuk data lora
 #define batasMaksimumTandon 80 // cm
@@ -23,7 +20,6 @@ String baca, sinyal;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600); // Untuk kecepatan kirim dan terima serial data dalam 9600 bit per detik
-  arduino2.begin(9600);
   while (!Serial) return;
 
   /* konfigurasi lora (frekuensi transmisi & receiver) 
@@ -37,6 +33,8 @@ void setup() {
     Serial.println("Starting LoRa Failed!");
     while (1);
   }
+
+  pinMode(pinRelay, OUTPUT);
   
 }
 

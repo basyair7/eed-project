@@ -30,7 +30,7 @@ void program_relay() {
 
   if ((unsigned long)(waktuSekarang_2 - waktuSebelum_2) >= jedaWaktu_2)
   {
-    waktuSekarang_2 = waktuSebelum_2;
+    waktuSebelum_2 = waktuSekarang_2;
     // ambil data limit kelembapan untuk relay arduino
     int hum_limit, limit_tampungan;
     Firebase.getInt(firebaseData, path_limit_tampungan, &limit_tampungan);

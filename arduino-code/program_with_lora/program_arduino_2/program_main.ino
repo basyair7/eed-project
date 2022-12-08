@@ -1,3 +1,7 @@
+// buat variabel hidup atau mati
+#define HIDUP LOW
+#define MATI HIGH
+
 // buat variable millis waktu sebelum diproses program
 unsigned long waktuSebelum_1 = 0;
 
@@ -30,6 +34,7 @@ void relay_main() {
   // program relay dari LoRa
   if ((unsigned long)(waktuSekarang_1 - waktuSebelum_1) >= jedaWaktu_1) {
     // jalankan logika untuk relay pompa air
+    waktuSebelum_1 = waktuSekarang_1;
     // ubah sinyal analog arduino (0-1023) ke range 0 - 100
     data_sensor = map(analogRead(pinSensorAir), 0, 1023, 100, 0);
 
@@ -42,11 +47,11 @@ void relay_main() {
     }
 
     if (baca.toInt() < batasMinimumTandon && data_sensor > batasMinMataAir) {
-      arduino2.print(1);
+      digitalWrite(pinRelay, HIDUP);
       Serial.println(F("POMPA AIR INDUK HIDUP"));
     }
     else if (baca.toInt() >= batasMaksimumTandon || data_sensor <= batasMinMataAir) {
-      arduino2.print(0);
+      digitalWrite(pinRelay, MATI);
       Serial.println(F("POMPA AIR INDUK MATI"));
     }
   }

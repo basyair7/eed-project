@@ -24,6 +24,7 @@ void main_transmisi() {
   unsigned long waktuSekarang_1 = millis();
 
   if ((unsigned long)(waktuSekarang_1 - waktuSebelum_1) >= jedaWaktu_1) {
+    waktuSebelum_1 = waktuSekarang_1;
     // kirim data sensor ke LoRa receiver
     Serial.println(String(sensor()));
     LoRa.beginPacket();
