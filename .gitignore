@@ -2,3 +2,4 @@ whatsapp-bot/node_modules
 whatsapp-bot/.wwebjs_auth
 whatsapp-bot/src/db/firebaseKey/httpsFirebase.json
 whatsapp-bot/src/db/firebaseKey/serviceAccount.json
+arduino-code/token-link.txt
