@@ -18,8 +18,8 @@ const char* ssid = STASSID;
 const char* password = STAPSK;
 
 // Setting Firebase Database
-#define FIREBASE_HOST "https://eed-project-65ad4-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define FIREBASE_AUTH "65syXSc48WendlYVqCjWua95KHgV8767gz3YopaM"
+#define FIREBASE_HOST ""
+#define FIREBASE_AUTH ""
 
 // root json firebase data
 const String path_sensor_1 = "message-database/3-kelembapan-1/a";
