@@ -51,21 +51,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  // buat object jsonBuffer;
-  // DynamicJsonBuffer jsonBuffer;
-  // JsonObject& data = jsonBuffer.parseObject(Serial);
-
-  // if (data == JsonObject::invalid()) {
-  //   return jsonBuffer.clear();
-    
-  // }
-
-  // // ambil nilai sensor dari arduino
-  // int get_data_sensor_1 = data["sensor_mata_air"];
-
-  // // kirim data ke firebase
-  // push_data(get_data_sensor_1);
 
   program_relay(); // jalankan program_relay()
 
